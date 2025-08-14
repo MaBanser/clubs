@@ -68,12 +68,12 @@ The type of poker game is defined using a configuration dictionary. See [configs
   * e.g. [0, 0, 5] for a three player game with a bb ante of 5, 
   * passed ints will be expanded to all players i.e. pass antes=0 for no antes
 * raise_sizes
-  * float or str or list of floats or str: the maximum raise size as a list of values, one for each street
-  * options are ints (for fixed raise sizes), float('inf') (for no limit raise sizes) or 'pot' for pot limit raise sizes
+  * int or str or list of ints or strs: the maximum raise size as a list of values, one for each street
+  * options are ints (for fixed raise sizes), 'inf' (for no limit raise sizes) or 'pot' for pot limit raise sizes
   * single values are expanded to the number of streets
 * num_raises
-  * float or list of floats: the maximum number of raises for each street
-  * options are ints (for a fixed number of bets per round) or float('inf') for unlimited number of raises
+  * int or str or list of ints or strs: the maximum number of raises for each street
+  * options are ints (for a fixed number of bets per round) or 'inf' for unlimited number of raises
   * single values are expanded to the number of streets
 * num_suits
   * number of suits in the deck
